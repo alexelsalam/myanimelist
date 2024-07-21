@@ -13,9 +13,9 @@ export default function AnimeScroll({ api, isLoading, href }) {
           : api.data?.map((anime, index) => {
               return (
                 <div key={index} className="flex-none mr-4">
-                  <div
+                  <Link
                     href={`anime/${anime.mal_id}`}
-                    className="w-32 h-auto rounded-md sm:w-36 lg:w-40"
+                    className="w-32 h-auto rounded-md cursor-pointer sm:w-36 lg:w-40"
                   >
                     <Image
                       src={anime.images?.webp?.image_url}
@@ -24,7 +24,7 @@ export default function AnimeScroll({ api, isLoading, href }) {
                       height={150}
                       className="w-full rounded-md h-44 sm:h-52 sm:w-36 lg:w-40 lg:h-[225px]"
                     />
-                  </div>
+                  </Link>
                   <div className="w-32 text-center sm:w-36 lg:w-40 text-wrap">
                     <p className="text-sm sm:text-base lg:text-lg">
                       {anime.title}
