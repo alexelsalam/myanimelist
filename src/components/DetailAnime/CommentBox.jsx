@@ -10,7 +10,7 @@ const CommentBox = async ({ anime_mal_id, image }) => {
   });
 
   return (
-    <div className="w-full max-w-xl m-auto mt-24">
+    <div className="w-full max-w-xl m-auto mt-24 mb-[100px]">
       <div className="border-b-[1.5px] border-primary">
         <span className="pl-2">Diskusi</span>
       </div>

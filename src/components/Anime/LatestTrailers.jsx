@@ -1,4 +1,4 @@
-import { Card, CardFooter } from "@nextui-org/react";
+import { Card } from "@nextui-org/react";
 import { LoadingVideo } from "./Loading";
 import Image from "next/image";
 import { useState } from "react";
@@ -25,7 +25,7 @@ const LatestTrailers = ({ api, isLoading }) => {
                   <Card className="h-[150px] w-[220px] overflow-hidden cursor-pointer">
                     <div onClick={() => setDisplay(true)}>
                       <span className="absolute z-[2] text-white top-[3.5rem] left-[5.3rem] bg-black/50 rounded-full">
-                        <PlayCircle size={50} />
+                        <PlayCircle size={50} color="#14b8a6" />
                       </span>
                       <Image
                         src={anime.images?.webp?.image_url}
@@ -35,7 +35,7 @@ const LatestTrailers = ({ api, isLoading }) => {
                       />
                     </div>
                   </Card>
-                  <div className="p-1 text-center max-w-[300px] text-wrap">
+                  <div className="p-1 text-center max-w-[300px] text-wrap text-sm">
                     <h3>{anime.title}</h3>
                   </div>
                 </div>

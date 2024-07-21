@@ -5,6 +5,7 @@ export default function Pagination({ page, lastPage, setPage }) {
       top: 0,
     });
   };
+
   const handlerPrevButton = () => {
     if (page > 1) {
       setPage((prev) => prev - 1);

@@ -19,10 +19,12 @@ const ParticelComments = ({
 
   const router = useRouter();
 
+  //make new comment
   const handleInput = (event) => {
     setNewComment(event.target.value);
   };
 
+  //edit comment
   const handleEdit = async (e) => {
     e.preventDefault();
     const data = {
@@ -41,6 +43,7 @@ const ParticelComments = ({
     }
     setIsEdit(!isEdit);
   };
+  //last function edit comment
 
   return (
     <>

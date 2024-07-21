@@ -14,6 +14,7 @@ export const sosmeds = [
     ),
     tittle: "Twitter",
     description: "For announcements, tips and general information.",
+    link: "https://x.com/alexelsalam",
   },
   {
     icon: (
@@ -34,6 +35,7 @@ export const sosmeds = [
     tittle: "Discord",
     description:
       "To get involved in the community, ask questions and share tips.",
+    link: "https://discord.gg/zrr8qx6k",
   },
   {
     icon: (
@@ -96,5 +98,6 @@ export const sosmeds = [
     ),
     tittle: "Instagram",
     description: "For more post, update anime and some snippets.",
+    link: "https://www.instagram.com/alexelsalam",
   },
 ];

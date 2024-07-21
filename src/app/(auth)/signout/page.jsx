@@ -1,7 +1,9 @@
 "use client";
 import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const SignOut = () => {
+  const router = useRouter();
   return (
     <div className="flex items-center justify-center max-w-xl mx-auto min-h-[89vh]">
       <div className="shadow bg-[#16cdbb] rounded-xl w-80 h-72">
@@ -24,10 +26,13 @@ const SignOut = () => {
             onClick={() => signOut({ callbackUrl: "/signin" })}
             className="h-10 transition duration-100 hover:text-white hover:bg-primary border-[0.3px] border-black hover:border-none rounded-full w-72"
           >
-            <p className="">Sign Out</p>
+            <p>Sign Out</p>
           </button>
-          <button className="h-10 transition duration-100 border border-black rounded-full hover:text-white hover:bg-primary hover:border-none w-72">
-            <p className="">Batalkan </p>
+          <button
+            onClick={() => router.back()}
+            className="h-10 transition duration-100 border border-black rounded-full hover:text-white hover:bg-primary hover:border-none w-72"
+          >
+            <p>Batalkan </p>
           </button>
         </div>
       </div>

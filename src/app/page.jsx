@@ -1,5 +1,5 @@
 import Hero from "@/components/Anime/Hero";
-import { getAnime, getNestedAnime } from "../libs/api-libs";
+import { getAnime } from "../libs/api-libs";
 import TopAnime from "@/components/Anime/TopAnime";
 import RecommendAnime from "@/components/Anime/RecommendAnime";
 import Trailers from "@/components/Anime/Trailers";
